@@ -1,0 +1,85 @@
+.new{
+    background-color: aqua;
+    padding: 10px;
+    text-align: center;
+
+}
+
+.close-button {
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  /* color: #fff; */
+  /* border: none; */
+  padding: 0px !important;
+  /* border-radius: 50%; */
+  width: 25px !important;
+  margin-left: 85% !important;
+  height: 25px;
+  justify-content: center;
+  align-items: center;
+}
+
+.seat-container {
+    display: grid;
+    grid-template-columns: repeat(10, 50px); /* Adjust the number of columns as needed */
+    grid-gap: 10px;
+}
+
+.seat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.available {
+    border: 1px solid black;
+}
+
+.selected {
+    background-color: green;
+    color: white;
+}
+
+.booked {
+    background-color: red;
+    color: white;
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .popup-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .popup-content input,
+  .popup-content button {
+    margin-top: 10px;
+  }
+  
+  .popup-content input {
+    display: block;
+    width: 100%;
+    padding: 5px;
+  }
+  
+  .popup-content button {
+    display: block;
+    width: 100%;
+  }
+  
+  

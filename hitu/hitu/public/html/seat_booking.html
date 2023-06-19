@@ -1,0 +1,51 @@
+<!-- seat_booking.html -->
+
+<h1>Seat Booking</h1>
+
+<table id="seatTable">
+  <tbody>
+    <tr>
+      <td><button class="seat" data-row="1" data-column="1">Seat 1</button></td>
+      <td><button class="seat" data-row="1" data-column="2">Seat 2</button></td>
+      <td><button class="seat" data-row="1" data-column="3">Seat 3</button></td>
+      <!-- Add more seat buttons for the first row -->
+    </tr>
+    <tr>
+      <td><button class="seat" data-row="2" data-column="1">Seat 4</button></td>
+      <td><button class="seat" data-row="2" data-column="2">Seat 5</button></td>
+      <td><button class="seat" data-row="2" data-column="3">Seat 6</button></td>
+      <!-- Add more seat buttons for the second row -->
+    </tr>
+    <!-- Add more rows as necessary -->
+  </tbody>
+</table>
+
+<button id="bookButton">Book</button>
+
+<script>
+  // Add event listeners to seat buttons
+  const seatButtons = document.querySelectorAll('.seat');
+  seatButtons.forEach((button) => {
+    button.addEventListener('click', () => {
+      const selectedSeat = {
+        row: button.getAttribute('data-row'),
+        column: button.getAttribute('data-column')
+      };
+      // Update UI to reflect seat selection
+      button.classList.toggle('selected');
+      // Perform additional actions, such as updating hidden form fields
+      document.getElementById('selected_seat_row').value = selectedSeat.row;
+      document.getElementById('selected_seat_column').value = selectedSeat.column;
+    });
+  });
+
+  // Handle form submission
+  const bookButton = document.getElementById('bookButton');
+  bookButton.addEventListener('click', () => {
+    const selectedSeatRow = document.getElementById('selected_seat_row').value;
+    const selectedSeatColumn = document.getElementById('selected_seat_column').value;
+    // Perform booking logic here, e.g., make an API request to the server
+    // to update the seat's availability status and save the booking details.
+    // Display confirmation or error message to the user accordingly.
+  });
+</script>
