@@ -253,6 +253,46 @@ def get_seat_data(selected_date):
                     }
                     seat_data.append(temp)
             return {'seat_data': seat_data, 'status': seat_doc.docstatus}
+    else:
+                # Calculate dates
+        # current_date = frappe.utils.getdate()
+        # next_7th_day_date = frappe.utils.add_to_date(current_date, days=7)
+        # prev_7th_day_date = frappe.utils.add_to_date(current_date, days=-8)
+
+        # Delete existing documents
+        # docs = frappe.get_list("Seating System", filters={"date": str(prev_7th_day_date)})
+        # for doc1 in docs:
+        #     frappe.delete_doc("Seating System", doc1.name)
+
+        # Create new document
+        return add_next_document(selected_date)
+
+        
+
+def add_next_document(date):
+    doc = frappe.new_doc("Seating System")
+    doc.date = str(date)
+
+    # Create seat entries
+    seats = []
+    for row in range(1, 6):
+        for column in range(1, 11):
+            seat = {
+                "doctype": "Seat",
+                "row": row,
+                "column": column,
+                "availability": "available",
+                "emp_id": "",
+                "booked_by": ""
+            }
+            seats.append(seat)
+
+    doc.set("seat_1", seats)
+    doc.insert()
+    doc.save()
+    # frappe.msgprint('qwertyuiop')
+    return get_seat_data(date)
+    # return {'seat_data': seats, 'status': doc.docstatus}
 
 def send_email(email_booked_by,email_booked_for,name_booked_by,name_booked_for, seat):
     recipients = [email_booked_by, email_booked_for]
