@@ -1,0 +1,25 @@
+{
+ "cards": [
+  {
+   "card": "SEcond Doc Card"
+  }
+ ],
+ "charts": [
+  {
+   "chart": "Second Doc",
+   "width": "Half"
+  }
+ ],
+ "creation": "2023-05-22 13:31:02.598365",
+ "dashboard_name": "Hitu Dashboard",
+ "docstatus": 0,
+ "doctype": "Dashboard",
+ "idx": 0,
+ "is_default": 1,
+ "is_standard": 1,
+ "modified": "2023-05-22 13:31:02.598365",
+ "modified_by": "Administrator",
+ "module": "Hitu",
+ "name": "Hitu Dashboard",
+ "owner": "Administrator"
+}

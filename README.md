@@ -1,1 +1,7 @@
-# frappe-hitu
+## Hitu
+
+new app
+
+#### License
+
+MIT
