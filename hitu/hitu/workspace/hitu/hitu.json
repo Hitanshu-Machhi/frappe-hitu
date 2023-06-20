@@ -1,0 +1,47 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"cZWGPWCyg8\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Hitu</span>\",\"col\":12}},{\"id\":\"3-musOSKRL\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Create First Doc\",\"col\":3}},{\"id\":\"ak1hMhN1IQ\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Hitu Dashboard\",\"col\":3}}]",
+ "creation": "2023-05-22 13:25:49.251861",
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "hr",
+ "idx": 0,
+ "is_hidden": 0,
+ "label": "Hitu",
+ "links": [],
+ "modified": "2023-06-20 14:39:33.259110",
+ "modified_by": "Administrator",
+ "module": "Hitu",
+ "name": "Hitu",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [
+  {
+   "role": "Employee"
+  }
+ ],
+ "sequence_id": 31.0,
+ "shortcuts": [
+  {
+   "color": "Blue",
+   "doc_view": "List",
+   "format": "{} Open",
+   "label": "Create First Doc",
+   "link_to": "FirstDoc",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Hitu Dashboard",
+   "link_to": "Hitu Dashboard",
+   "type": "Dashboard"
+  }
+ ],
+ "title": "Hitu"
+}

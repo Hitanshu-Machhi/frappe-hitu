@@ -1,0 +1,35 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"GAgwYtDbaK\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Seat Book</span>\",\"col\":12}},{\"id\":\"svptMd88q0\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Amar neptune\",\"col\":3}}]",
+ "creation": "2023-05-23 18:22:48.355484",
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "up-line",
+ "idx": 0,
+ "is_hidden": 0,
+ "label": "Seat Book",
+ "links": [],
+ "modified": "2023-06-20 14:39:54.031851",
+ "modified_by": "Administrator",
+ "module": "Book Seating",
+ "name": "Seat Book",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "Employeess",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 33.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Amar neptune",
+   "link_to": "second-doc-new-page",
+   "type": "Page"
+  }
+ ],
+ "title": "Seat Book"
+}
